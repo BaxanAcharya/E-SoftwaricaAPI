@@ -82,6 +82,7 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.Employ
                       Intent intent=new Intent(v.getContext(), UpdateActivity.class);
                       Bundle bundle=new Bundle();
 
+                      bundle.putString("id", String.valueOf(employee.getId()));
                       bundle.putString("name", employee.getEmployee_name());
                       bundle.putString("age", String.valueOf(employee.getEmployee_age()));
                       bundle.putString("salary", employee.getEmployee_salary());
